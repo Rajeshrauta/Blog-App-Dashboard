@@ -23,6 +23,7 @@ import { NewPostComponent } from './posts/new-post/new-post.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { SubscribersComponent } from './subscribers/subscribers.component';
+import { GraphAnalyzerComponent } from './graph-analyzer/graph-analyzer.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { SubscribersComponent } from './subscribers/subscribers.component';
     AllPostComponent,
     NewPostComponent,
     LoginComponent,
-    SubscribersComponent
+    SubscribersComponent,
+    GraphAnalyzerComponent
     
   ],
   imports: [

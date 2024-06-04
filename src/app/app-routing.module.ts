@@ -7,6 +7,7 @@ import { NewPostComponent } from './posts/new-post/new-post.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './services/auth.guard';
 import { SubscribersComponent } from './subscribers/subscribers.component';
+import { GraphAnalyzerComponent } from './graph-analyzer/graph-analyzer.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent, canActivate : [AuthGuard] },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'posts', component: AllPostComponent, canActivate: [AuthGuard] },
   { path: 'posts/new', component: NewPostComponent, canActivate: [AuthGuard] },
   { path: 'subscribers', component: SubscribersComponent, canActivate: [AuthGuard] },
+  { path: 'analyzer', component: GraphAnalyzerComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({
